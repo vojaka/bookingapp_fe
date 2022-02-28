@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.slick-slider {
+    width: 50%;
+    margin-left: 20%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slick-prev:before, .slick-next:before {
+    color: #595c8a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart-sum {
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cart-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0 10%;
+    border-bottom: 1px solid lightgray;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-item-name {
+    width: 300px;
+    margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-item-price {
+    width: 70px;
+    margin-top: 20px;
+}
+
+.cart-item-total {
+    width: 70px;
+    margin-top: 20px;
+}
+
+.cart-item-quantity {
+    width: 10px;
+    margin-top: 20px;
+}
+
+.cart-sum {
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.cart-button {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 10px;  
+    margin: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.cart-button.delete {
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.cart-button:hover {
+    opacity: 1.0;
+}
+
+.flag {
+    width: 30px;
+}
+
+.form-label {
+    width: 100%;
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.admin-button {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(43, 37, 37);   
+}
+
+.table.table-hover.table-bordered {
+    width: 100%;
 }
