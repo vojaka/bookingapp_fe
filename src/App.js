@@ -21,6 +21,7 @@ import ViewPerson from './Pages/Admin/ViewPerson';
 import NotFound from './Pages/NotFound';
 import AdminNotFound from './Pages/Admin/AdminNotFound';
 import AboutUs from './Pages/AboutUs';
+import Login from './Pages/Login';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/ostukorv" exact element={<Cart />} />
+        <Route path="/logi-sisse" exact element={<Login />} />
         <Route path="/toode/:id" exact element={<SingleProduct />} />
         <Route path="/AboutUs" exact element={<AboutUs />} />
         <Route path="/admin" exact >

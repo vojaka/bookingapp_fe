@@ -38,6 +38,9 @@ function NavigationBar() {
             <Nav className="me-auto">
                 <Nav.Link as={Link} to="/admin">{t("navbar.admin-link")}</Nav.Link>
             </Nav>
+            <Nav className="me-auto">
+                <Nav.Link as={Link} to="/logi-sisse">{t("Logi sisse")}</Nav.Link>
+            </Nav>
             {/* <Nav className="me-auto">
                 <Nav.Link as={Link} to="/AboutUs">{t("navbar.admin-link")}</Nav.Link>
             </Nav> */}
