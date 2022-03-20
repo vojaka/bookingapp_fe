@@ -21,7 +21,8 @@ function AddStore() {
             method: "POST",
             body: JSON.stringify(newStore),
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                "Authorization": "Bearer " + sessionStorage.getItem("token"
             }
         })
     }
