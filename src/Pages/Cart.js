@@ -54,7 +54,8 @@ function Cart() {
                 method: "POST",
                 body: JSON.stringify(cartProducts),
                 headers: {
-                    "Content-Type":"application/json"
+                    "Content-Type":"application/json",
+                    "Authorization": "Bearer " + sessionStorage.getItem("token")
                 }}).then(response => {
                     return response.json();
                 })

@@ -11,19 +11,18 @@ function Login() {
         }
       
  fetch("https://webshop1234.herokuapp.com/login",{
-            method: "POST",
-            body: JSON.stringify(loginData),
-            headers: {
-                "Content-Type":"application/json"
-            }
-        }).then(res => 
-            res.json()) 
-        .then(data => {
-            if (data.token) {
-              sessionStorage.setItem("token", data.token);
-            }  
-        })
+    method: "POST",
+    body: JSON.stringify(loginData),
+    headers: {
+        "Content-Type":"application/json"
     }
+}).then(res => res.json()) 
+.then(data => {
+    if (data.token) {
+      sessionStorage.setItem("token", data.token);
+    }  
+})
+}
  return ( 
     <div>
         <label>E-mail</label>

@@ -22,6 +22,7 @@ import NotFound from './Pages/NotFound';
 import AdminNotFound from './Pages/Admin/AdminNotFound';
 import AboutUs from './Pages/AboutUs';
 import Login from './Pages/Login';
+import Order from './Pages/Order';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/ostukorv" exact element={<Cart />} />
         <Route path="/logi-sisse" exact element={<Login />} />
+        <Route path="/check-payment" exact element={<Order />} />
         <Route path="/toode/:id" exact element={<SingleProduct />} />
         <Route path="/AboutUs" exact element={<AboutUs />} />
         <Route path="/admin" exact >
