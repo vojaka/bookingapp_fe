@@ -13,7 +13,11 @@ function ViewPerson() {
     const searchRef = useRef();
 
     useEffect(() => {
-        fetch("https://webshop1234.herokuapp.com/person")
+        fetch("https://webshop1234.herokuapp.com/person",{
+        headers: {
+            "Content-Type":"application/json",
+            "Authorization": "Bearer " + sessionStorage.getItem("token")
+        }})
         .then(res => res.json())
         .then(body => {
             updatePerson(body)
@@ -36,7 +40,11 @@ function ViewPerson() {
 
     function onDeletePerson(person) {
         fetch("https://webshop1234.herokuapp.com/category/" + person.id, {
-            method: "DELETE"
+            method: "DELETE",
+            headers: {
+                "Content-Type":"application/json",
+                "Authorization": "Bearer " + sessionStorage.getItem("token")
+            }
         })
         .then(res => res.json()) 
         .then(data => {
