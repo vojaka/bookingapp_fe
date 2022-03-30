@@ -10,7 +10,7 @@ function ViewLocation() {
     const handleShow = () => setShow(true);
 
     const [location, updateLocation] = useState([]);
-    const [timeslot, updateTimeslot] = useState([]);
+    const [timeslot, updateTimeslot] = useState([location]);
     // const [originalProducts, updateOriginalProducts] = useState([]);
     // const searchRef = useRef();
 
@@ -80,7 +80,7 @@ function ViewLocation() {
       <td>{location.longAddress}</td>
       <td>{location.locationInitialTime}</td>
       <td>{location.locationEndTime}</td>
-      <td>{timeslot.filter(element => element.location.id === location.timeSlots.id).map(timeSlots => <tr>{timeSlots}</tr>)
+      <td>{timeslot.filter(element => element.location_id === location.timeSlots).map(timeSlots => <tr>{timeSlots}</tr>)
       }</td>
       <td>
           {/* <Button onClick={() => onDeleteProduct(store)} variant="danger">X</Button>
